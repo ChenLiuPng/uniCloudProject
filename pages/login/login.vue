@@ -7,10 +7,10 @@
 		<!-- 表单域 -->
 		<uni-forms ref="forms" class="forms" :value="forms" :rules="rules">
 			<uni-forms-item name="username">
-				<uni-easyinput v-model="forms.username" class="input-bg-color py-2" :inputBorder="false" placeholder="账号" />
+				<uni-easyinput v-model="forms.username" class="input-bg-color py-2 rounded" :inputBorder="false" placeholder="账号" />
 			</uni-forms-item>
 			<uni-forms-item name="password">
-				<uni-easyinput v-model="forms.password" class="input-bg-color py-2" :inputBorder="false" placeholder="密码" type="password" />
+				<uni-easyinput v-model="forms.password" class="input-bg-color py-2 rounded" :inputBorder="false" placeholder="密码" type="password" />
 			</uni-forms-item>
 			<view class="text-center secondary-color position-relative">
 				<view @tap="toRegisterPage">注册新用户?</view>
