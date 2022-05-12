@@ -1,6 +1,7 @@
 <template>
 	<view>
-		注册页面
+		<c-status-bar />
+		我是注册页面
 	</view>
 </template>
 
@@ -17,6 +18,6 @@
 	}
 </script>
 
-<style>
+<style scoped>
 
 </style>
