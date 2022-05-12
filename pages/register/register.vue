@@ -1,6 +1,7 @@
 <template>
 	<view>
 		<c-status-bar />
+		<c-page-header title="注册" :canBack="false" />
 		我是注册页面
 	</view>
 </template>
@@ -13,7 +14,11 @@
 			}
 		},
 		methods: {
-			
+			back(){
+				uni.navigateBack({
+					delta:1
+				})
+			}
 		}
 	}
 </script>
