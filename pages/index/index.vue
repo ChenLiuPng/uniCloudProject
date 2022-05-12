@@ -1,9 +1,11 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
+	<view>
+		<view class="text-center bg-danger text-white vivify delay-1000" :class="diyClass">
+			{{title}}
 		</view>
+		<button @click="diyClassChange">
+			动画
+		</button>
 	</view>
 </template>
 
@@ -11,42 +13,25 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				title: 'Hello',
+				diyClass: ''
 			}
 		},
 		onLoad() {
 
 		},
 		methods: {
-
+			diyClassChange() {
+				if(!this.diyClass){
+					this.diyClass = 'flipOutX'
+				}else{
+					this.diyClass = ''
+				}
+			}
 		}
 	}
 </script>
 
 <style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
 
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
 </style>
