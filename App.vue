@@ -14,6 +14,7 @@
 
 <style>
 	/*每个页面公共css */
+	@import url("@/common/font/iconfont.css");
 	@import url('@/common/css/free.css');
 	@import url('@/common/css/vivify.css');
 </style>

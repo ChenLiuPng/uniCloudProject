@@ -6,6 +6,7 @@
 		<button @click="diyClassChange">
 			动画
 		</button>
+		<view class="iconfont icon-sousuo1 text-danger"></view>
 	</view>
 </template>
 
