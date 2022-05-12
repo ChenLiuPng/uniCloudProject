@@ -17,4 +17,5 @@
 	@import url("@/common/font/iconfont.css");
 	@import url('@/common/css/free.css');
 	@import url('@/common/css/vivify.css');
+	@import url('@/common/css/common.css');
 </style>
